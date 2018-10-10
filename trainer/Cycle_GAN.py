@@ -179,8 +179,6 @@ def main(job_dir,**args):
     sess = tf.InteractiveSession(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))
     tf.global_variables_initializer().run()
 
-       # train_set = tf.image.resize_images(mnist.train.images, [64, 64]).eval()
-       # train_set = (train_set - 0.5) / 0.5  #-1 to 1 normalize
 
     root =job_dir+ 'CycleGAN_results/'
     model = 'CycleGAN'
